@@ -1,0 +1,93 @@
+:root {
+  --dark: #2A2F4F;
+  --light: #FFEAEA;
+  --border: #912ca8;
+  --hover: #712183;
+  --td-hover: #141727;
+}
+
+* {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.column {
+  flex: 1;
+  padding: 1rem;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.column form {
+  display: flex;
+  flex-direction: column;
+}
+
+.column form div {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+.column label {
+  margin-bottom: 0.5rem;
+}
+
+.column input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.column .button-form {
+  width: 8rem;
+  background-color: var(--border);
+  font-weight: 700;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.column .button-form:hover {
+  background-color: var(--hover);
+}
+
+.column table {
+  border: 1px solid red;
+}
+
+.column table tr {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+}
+
+.column table .title td {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.column table .content td {
+  margin-bottom: 0.5rem;
+}
+
+.column .button-td {
+  width: 3rem;
+  background-color: transparent;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+.column .button-td:hover {
+  background-color: var(--td-hover);
+}
